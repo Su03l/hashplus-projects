@@ -13,7 +13,10 @@
     <header class="site-header">
         <div class="container">
             <nav class="navbar" aria-label="التنقل الرئيسي">
-                <a href="#" class="nav-branding">هاش بلس</a>
+                <a href="#home" class="nav-branding">
+                    <img src="https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/zvAVvg/90iMe0RSsp2D5kn5lc5Ud12fSe3nl4RNKALfrihV.jpg" alt="hashplus logo">
+                    <span>هاش بلس</span>
+                </a>
 
                 <button class="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="primary-menu">
                     <span class="bar"></span>
@@ -23,10 +26,10 @@
 
                 <ul id="primary-menu" class="nav-menu">
                     <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">عن هاش بلس</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">المعسكرات</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">المنتجات</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">تواصل معنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">عن هاش بلس</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#camps">المعسكرات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">المنتجات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +37,7 @@
 
     <main>
         <div class="container">
-            <section class="hero">
+            <section id="home" class="hero">
                 <div class="hero-content">
                     <p>مرحبا بك </p>
                     <h1>نحن <b>هاش بلس</b></h1>
@@ -43,8 +46,8 @@
                     <p>نقدم معسكرات تدريبية, محتوى تفاعلي, وتطبيقات مبتكرة تساعدك على بناء مهاراتك</p>
                     <p>من الصفر حتى الاحترافز رؤيتنا هي تخريج جيل من المبرمجين وصناع التنقية في <br> وجميع انحاء الوطن العربي</p>
                     <div class="btn-group">
-                        <button class="btn btn-primary">انضم الآن</button>
-                        <button class="btn btn-outline">تعرّف أكثر</button>
+                        <a href="#camps" class="btn btn-primary">انضم الآن</a>
+                        <a href="#about" class="btn btn-outline">تعرّف أكثر</a>
                     </div>
                 </div>
 
@@ -52,8 +55,22 @@
                     <img src="https://pbs.twimg.com/media/G1iz92WXYAM9kPZ?format=jpg&name=large" alt="hashplus">
                 </div>
             </section>
+
+            <section id="about" style="height: 50vh; border-top: 1px solid #eee; padding-top: 40px;">
+                <h2>عن هاش بلس</h2>
+                <p>بنضيف المحتوى هنا </p>
+            </section>
+
+           
         </div>
     </main>
+
+
+    <button class="scroll-to-top" aria-label="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+</button>
 
     <script src="script.js"></script>
 </body>
